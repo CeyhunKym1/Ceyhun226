@@ -16,11 +16,11 @@ bot.on('ready', () => {
 
     let statuses = [
         `!help`,
-        `1`,
-        `2`,
-        `3`,
-        `4`,
-        `5`
+        `H`,
+        `A`,
+        `L`,
+        `L`,
+        `O`
     ]
 
     setInterval(function(){
