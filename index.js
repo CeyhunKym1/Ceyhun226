@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const { MessageEmbed } = require("discord.js")
 const PREFIX = '!';
-const TOKEN = "ODM1OTY2NzI0NTc4MDgyODI2.YIXIrg.LH8FIGKy4jMb9azMEpobPMgM_s8"
 
 const chance = '801465438605148250'
 
