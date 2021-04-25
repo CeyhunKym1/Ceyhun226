@@ -134,13 +134,13 @@ bot.on('message', message => {
             message.delete();
             message.author.send(rolleninfo)
         }
-        else if (message.content === '<@!834128211503087680>') {
+        else if (message.content === '<@!835966724578082826>') {
 
             const baum = new Discord.MessageEmbed()
             .setTitle('Man hat mich gerufen ...')
             .setColor('#98c9c3')
             .addField('**Brauchst du Hilfe?**', 'Dann schreibe das Team, oder den Owner an!')
-            .addField('Willst du dem Owner eine DM schreiben?', 'Hier seine DC#ID: RappyTV#8287')
+            .addField('Willst du dem Owner eine DM schreiben?', 'Hier seine DC#ID: 370z#0018')
 
             message.delete();
             message.author.send(baum)
@@ -178,14 +178,14 @@ bot.on('message', message => {
             message.channel.send(text)
         }
         else if (parts[0] == '!sayemb') {
-            if(!parts[1]) return message.channel.send('Du musst angeben, was der Text von deinem Embed beinhalten soll!')
+            if(!parts[1]) return message.channel.send('You have to specify what the text of your embed should contain!')
             var text = message.content.split(" ").slice(1).join(" ");
             message.delete();
 
             const sayembed = new Discord.MessageEmbed()
-            .setColor('RANDOM')
-            .addField(message.member.displayName + ' schreit:', text, true)
-            .setFooter('Dies ist ein Ausruf von ' + message.author.username + '#' + message.author.discriminator + ' !')
+            .setColor('WHITE')
+            .addField(message.member.displayName + ' cries:', text, true)
+            .setFooter('This is an exclamation from ' + message.author.username + '#' + message.author.discriminator + ' !')
 
             message.channel.send(sayembed)
         }
